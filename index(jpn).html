@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM entertainment</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/main3.css">
+
+    <script src="js/main1js.js"></script>
+    <script src="js/main2js.js"></script>
+    <script src="js/main3js.js"></script>
+  
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        
+        *{margin: 0; padding: 0; font-family: 'Fredoka One', cursive;}
+        body{background-color: black;}
+        ul,li,ol{list-style-type: none;}
+        a{text-decoration: none;}
+        .kor{font-family: 'Black Han Sans', sans-serif;}
+        
+        
+
+
+
+    </style>
+    
+    <script>
+        $(window).ready(function () {
+            var typingBool = false;
+            var typingIdx = 0;
+            var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트를 가져온다
+            typingTxt = typingTxt.split(""); // 한글자씩 자른다.
+            if (typingBool == false) {
+                // 타이핑이 진행되지 않았다면
+                typingBool = true;
+
+                var tyInt = setInterval(typing, 100); // 반복동작
+            }
+
+            function typing() {
+                if (typingIdx < typingTxt.length) {
+                    // 타이핑될 텍스트 길이만큼 반복
+                    $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다.
+                    typingIdx++;
+                } else {
+                    clearInterval(tyInt); //끝나면 반복종료
+                }
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <header class="header">
+
+        <a class="menu-trigger" href="sub/sub.html">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </a>
+        
+        <nav class="nav1">
+            <div class="logo"><img src="img/logo2.png" alt="logo1"></div>
+            <div class="nav1inbox">
+            <ul class="navigation">
+                <li><a href="sub/sub.html">会社</a></li>
+                <li><a href="sub/sub.html">エンターテインメント</a></li>
+                <li><a href="sub/sub.html">IR</a></li>
+                <li><a href="sub/sub.html">スポットライト</a></li>
+            </ul>
+            </div>
+            <ul class="lang">
+                <li class="langinbox1"><a href="./index(chn).html">JPN</a>
+                    <ul class="langinbox11">
+                        <li><a href="./index.html">KOR</a></li>
+                        <li><a href="./index(eng).html">ENG</a></li>
+                        <li><a href="./index(chn).html">CHN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav2">
+            <div class="logo2"><img src="img/logo2.png" alt="logo2"></div>
+            <div class="nav2inbox">
+            <ul class="navigation2">        
+                <li><a href="sub/sub.html" class="nav2head1">会社</a>
+                    <ul class="menu">
+                        <li><span><a class="nav2text1" href="sub/sub.html">企業情報</a></span></li>
+                        <li><span><a class="nav2text1" href="sub/sub.html">アーティスト</a></span></li>
+                        <li><span><a class="nav2text1" href="sub/sub.html">ミッション</a></span></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="sub/sub.html" class="nav2head2">ビジネス</a>
+                    <ul class="menu">
+                        <li><span><a href="sub/sub.html" class="nav2text2">エンターテインメント</a></span></li>
+                        <li><span><a href="sub/sub.html" class="nav2text2">コンサート</a></span></li>
+                        <li><span><a href="sub/sub.html" class="nav2text2">新しいメディア</a></span></li>
+                        <li><span><a href="sub/sub.html" class="nav2text2">ライフスタイル</a></span></li>
+                    </ul>
+                </li>
+                <li><a href="sub/sub.html" class="nav2head3">IR</a>
+                    <ul class="menu">
+                        <li><span><a class="nav2text3" href="sub/sub.html">管理情報</a></span></li>
+                        <li><span><a class="nav2text3" href="sub/sub.html">開示情報</a></span></li>
+                        <li><span><a class="nav2text3" href="sub/sub.html">IR</a></span></li>
+                        <li><span><a class="nav2text3" href="sub/sub.html">株価</a></span></li>
+                    </ul>
+                </li>
+                <li><a href="sub/sub.html" class="nav2head4">スポットライト</a>
+                    <ul class="menu">
+                        <li><span><a href="sub/sub.html" class="nav2text4">スポットライト</a></span></li>
+                    </ul>
+                </li>    
+            </ul>
+            </div>
+            <ul class="lang">
+                <li class="langinbox1"><a href="./index(jpn).html">JPN</a>
+                    <ul class="langinbox11">
+                        <li><a href="./index.html">KOR</a></li>
+                        <li><a href="./index(eng).html">ENG</a></li>
+                        <li><a href="./index(chn).html">CHN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- 클래스명은 변경하면 안 됨 -->
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/3F2OaR4oHfM?autoplay=1&mute=1&amp;playlist=3F2OaR4oHfM&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="s1text">
+                <span>文化技術の未来</span>
+                <span class="typing-txt">アジアのNo.1エンターテインメントグループ</span><br>
+                <span class="typing"></span>
+                <span>SM Entertainment / SM JAPAN / SM USA / SM TRUE / DREAM MAKER / DREAM MAKER China
+                    SM C&C / SM Life Design Group / SM Brand Marketing
+                    DearU / KEYEAST / Stream Media Corp. / MYSTIC STORY / GalaxiaSM / ESteem</span>
+               
+            </div>
+        </div>
+		<div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/PtFnieJ7Imc?autoplay=1&mute=1&amp;playlist=PtFnieJ7Imc&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <div class="s2text">
+                <span>デジタルコンバージェンス</span><br>
+                <span>NEW PARADIGM<br>NEW PLATFORM</span><br>
+                <span>Korean entertainment agencies through Asia-wide distribution channels
+                    and global partners</span>
+            </div>
+        </div>
+		<div class="swiper-slide">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/4TWR90KJl84?autoplay=1&mute=1&amp;playlist=4TWR90KJl84&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+                <div class="s3text">
+                    <span>進化の傾向</span><br>
+                    <span>THAT LEAD TO<br>LIFE STYLE</span><br>
+                    <span>Leading cultures in different areas including Food & Beverage, Amusement, Merchandise Shop and Travel</span>
+                </div>
+            </div>
+		<div class="swiper-slide">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/RmuL-BPFi2Q?autoplay=1&mute=1&amp;playlist=RmuL-BPFi2Q&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="s4text">
+                <span>音楽</span><br>
+                <span>Global Music<br>Producing System</span><br>
+                <span>SM Entertainment is leading the global music market through a differentiated production system with Asia's top artists.</span>
+            </div>
+        </div>
+		<div class="swiper-slide">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/2IkoKhr6Tss?autoplay=1&mute=1&amp;playlist=2IkoKhr6Tss&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="s5text">
+                <span>管理</span><br>
+                <span>Management<br>System</span><br>
+                <span>Through the systematic management system accumulated with 20 years of know-how, we perform professional tasks ranging from basic management of artists to planning, marketing, operation, and public relations to meet the needs of the public who consumes music. Responsible for smooth activities.</span>
+            </div>
+        </div>
+	</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-pagination"></div>
+	<div class="swiper-scrollbar"></div>
+</div>
+
+   
+  
+   
+    <script>
+
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+                new Swiper('.swiper-container', {
+
+                    // 스크롤바 설정하기
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                        draggable: true,
+                    },
+
+                    pagination: { // 페이징 설정
+                        el: '.swiper-pagination',
+                        clickable: true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+                    },
+                    navigation: { // 네비게이션 설정
+                        nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+                        prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+                    },
+                });
+
+                    setTimeout(function () {
+                       $(".s1text").fadeOut('slow');
+                    }, 10000);
+
+                    setTimeout(function () {
+                       $(".s2text").fadeOut('slow');
+                    }, 15000);
+
+                    setTimeout(function () {
+                       $(".s3text").fadeOut('slow');
+                    }, 20000);
+
+                    setTimeout(function () {
+                       $(".s4text").fadeOut('slow');
+                    }, 25000);
+
+                    setTimeout(function () {
+                       $(".s5text").fadeOut('slow');
+                    }, 30000);
+
+                    $(function(){
+                        $(".s1text").click(function(){
+                            $(this).fadeOut();
+                        });
+
+                        $(".s2text").click(function(){
+                            $(this).fadeOut();
+                        });
+
+                        $(".s3text").click(function(){
+                            $(this).fadeOut();
+                        });
+
+                        $(".s4text").click(function(){
+                            $(this).fadeOut();
+                        });
+
+                        $(".s5text").click(function(){
+                            $(this).fadeOut();
+                        });
+                    });
+
+                        var burger = $('.menu-trigger');
+
+                        burger.each(function (index) {
+                            var $this = $(this);
+
+                            $this.on('click', function (e) {
+                                e.preventDefault();
+                                $(this).toggleClass('active-' + (index + 1));
+                                
+                            })
+                        });
+
+
+                    </script>
+
+</body>
+</html>
