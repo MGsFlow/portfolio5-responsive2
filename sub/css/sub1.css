@@ -1,0 +1,130 @@
+@charset "uft-8";
+
+@media(min-width: 1200px){
+    .header{width: 100%; height: 100%;}
+    .nav1{width: 100%; height: 100px; background-color: pink;  position: fixed; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; z-index: 9998;}
+    .logo{width: 5%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .logo img{width: 100px; height: 100px;}
+    .nav1inbox{width: 50%; height: 100%; }
+    .navigation{width: 100%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+    .navigation li{display: inline-block;}
+    .navigation li a{color: white; font-size: 3vmin;}
+    .lang{width: 5%; height: 100px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+    .lang li{display: block;}
+    .lang li a{color: white; font-size: 2.5vmin;}
+    .langinbox1{width: 100%;  position: relative; text-align: center;}
+    .langinbox11{width:100%; height: 170px; background-color: rgb(255, 169, 184); display: none; position: absolute; text-align: center; }
+    .langinbox11 li{margin-top: 20px;}
+    .menu-trigger{display: none;}
+
+    .nav2{width: 100%; height: 350px; background-color: rgb(255, 169, 184); position: fixed; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; z-index: 9999;}
+    .logo2{width: 5%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .logo2 img{width: 100px; height: 100px;}
+    .nav2inbox{width: 50%; height: 100%;}
+    .navigation2{width: 100%; height: 100%;  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+    .navigation2>li{display: inline-block; text-align: center;}
+    .navigation2>li>a{color: white; font-size: 3vmin;}
+    .menu li{display: block; margin-top: 35px; text-align: center;}
+    .menu span{position:relative ;}
+    .menu li a{color: white; font-size: 2.5vmin;}
+    .menu li span{color: white; font-size: 2.5vmin;}
+    .menu li a:hover{color:white; transition:all .3s ease}
+    .menu li > span{ position:relative }
+    .menu li > span::after {content: '';width: 0%; left: 50%;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+    .menu li:hover > span::after {  content: '';  width: 100%;  left: 0px;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+
+    .section1{width: 100%; height: 100%; background-color:pink; position: relative;}
+    .sec1box{width: 91%; height: 300%; background-color: white; position: absolute; top: 100px; right: 0px; z-index: 1; display: flex; flex-wrap: wrap; border-left: 2px solid black; border-right: 2px solid black;}
+    .sec1box1{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;  background-image: url("../img/concert2.png"); background-repeat: no-repeat; background-size: cover;}
+    .sec1box1:hover{cursor: pointer;}
+    .sec1box11{width: 90%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid white;}
+    .sec1box11 span{font-size: 9vmin; color: white;}
+    .sec1box2{width: 100%; height: 15%;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box21{width: 90%; height: 90%;  display: flex; flex-wrap: wrap;  align-content: center; border-bottom: 3px solid black;}
+    .sec1box21 span{width: 100%; color: black;}
+    .sec1box21 span:nth-of-type(1){font-size: 5vmin;}
+    .sec1box21 span:nth-of-type(2){font-size: 2vmin;}
+    .sec1box21 span:nth-of-type(3){font-size: 3vmin;}
+    .sec1box3{width: 100%; height: 15%;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box31{width: 90%; height: 90%; display: flex; flex-wrap: wrap;  align-content: center; border-bottom: 3px solid black;}
+    .sec1box31 span{width: 100%; color: black;}
+    .sec1box31 span:nth-of-type(1){font-size: 5vmin;}
+    .sec1box31 span:nth-of-type(2){font-size: 2vmin;}
+    .sec1box31 span:nth-of-type(3){font-size: 3vmin;}
+    .sec1box4{width: 100%; height: 50%;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box41{width: 90%; height: 90%; }
+    .sec1box411{width: 100%; height: 50%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box4111{width: 60%; height: 80%;  background-image: url("../img/mission.png"); background-repeat: no-repeat; background-size: contain;}
+    .sec1box412{width: 100%; height: 50%; }
+    .sec1box4121{width: 100%; height: 50%;  display: flex; flex-wrap: wrap; align-content: center;}
+    .sec1box4121 span{width: 100%; color: black;}
+    .sec1box4121 span:nth-of-type(1){font-size: 4vmin;}
+    .sec1box4121 span:nth-of-type(2){font-size: 3vmin;}
+    .sec1box4122{width: 100%; height: 50%;  display: flex; flex-wrap: wrap;  align-content: center;}
+    .sec1box4122 span{width: 100%; color: black;}
+    .sec1box4122 span:nth-of-type(1){font-size: 4vmin;}
+    .sec1box4122 span:nth-of-type(2){font-size: 3vmin;}
+    
+    
+    .sec2box{width: 91%; height: 300%; background-color: white; position: absolute; top: 100px; right: 50px; background-color: white; z-index: 2; display: flex; flex-wrap: wrap; border-left: 2px solid black; border-right: 2px solid black;}
+    .sec2box1{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;  background-image: url("../img/concert3.jpg"); background-repeat: no-repeat; background-size: cover;}
+    .sec2box1:hover{cursor: pointer;}
+    .sec2box11{width: 90%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid black;}
+    .sec2box11 span{font-size: 9vmin; color: black;}
+    .sec2box2{width: 100%; height: 80%; }
+    .sec2box2menu{width: 100%; height: 10%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec2box2menu1{width: 80%; height: 30%;  display: flex; flex-wrap: wrap; justify-content: center;}
+    .sec2box2menu1 li{width: 24%; height: 100%; font-size: 3vmin; border: 1px solid black; margin: 0 2px 0 2px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+    .sec2box2menu1 li:hover{cursor: pointer; background-color: pink; border: pink; color: white; transition: 1s;}
+    .sec2box2img{width: 100%; height: 80%;  position: relative;}
+    .sec2box2img1{width: 90%; height: 100%; position: absolute; top: 0; left: 5%; z-index: 5; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;}
+    .sec2box2img11{width: 19%; height: 16%; overflow: hidden;}
+    .sec2box2img11 img{width: 100%; height: 100%;}
+    .sec2box2img11 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2img2{width: 90%; height: 100%;  position: absolute; top: 0; left: 5%; z-index: 4; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;}
+    .sec2box2img21{width: 19%; height: 16%; overflow: hidden;}
+    .sec2box2img21 img{width: 100%; height: 100%;}
+    .sec2box2img2 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2img3{width: 90%; height: 100%; position: absolute; top: 0; left: 5%; z-index: 3; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;}
+    .sec2box2img31{width: 19%; height: 16%; overflow: hidden;}
+    .sec2box2img31 img{width: 100%; height: 100%;}
+    .sec2box2img31 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2img4{width: 90%; height: 100%; position: absolute; top: 0; left: 5%; z-index: 2; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;} 
+    .sec2box2img41{width: 19%; height: 16%; overflow: hidden;}
+    .sec2box2img41 img{width: 100%; height: 100%;}
+    .sec2box2img41 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2num{width: 100%; height: 10%; }
+
+    .sec3box{width: 91%; height: 300%; position: absolute; top: 100px; right: 100px; background-color: white; z-index: 3; display: flex; flex-wrap: wrap; border-left: 2px solid black; border-right: 2px solid black;}
+    .sec3box1{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; background-image: url("../img/concert1.jpg"); background-repeat: no-repeat; background-size: cover;}
+    .sec3box1:hover{cursor: pointer;}
+    .sec3box11{width: 90%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid white; }
+    .sec3box11 span{font-size: 9vmin; color: white;}
+    .sec3box2{width: 100%; height: 40%; display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+    .sec3box21{width: 90%; height: 80%;  display: flex; flex-wrap: wrap;}
+    .sec3box211{width: 30%; height: 95%;display: flex; flex-wrap: wrap; align-content: space-between;}
+    .sec3box211 span{width: 100%; font-size: 4vmin;}
+    .sec3box211 img{width: 250px; height: 250px;}
+    .sec3box212{width: 70%; height: 100%; }
+    .sec3box2121{width: 100%; height: 50%; background-image: url("../img/con1.jpg"); background-repeat: no-repeat; background-size: cover;}
+    .sec3box2122{width: 100%; height: 50%; display: flex; flex-wrap: wrap; align-content: center;}
+    .sec3box21221{width: 100%; height: 80%;}
+    .sec3box21221 span{font-size: 2.5vmin;}
+    .sec3box3{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center;}
+    .sec3box31{width: 90%; height: 90%;  border-top: 3px solid black;}
+    .sec3box31table{width: 100%; height: 100%; border: 1px solid #eee; font-size: 2vmin;}
+    .sec3box31table th{border-bottom: 1px solid #eee; border-right: 1px solid #eee; background-color: #F5F5F5; font-size: 2vmin;}
+    .sec3box31table td{border-bottom: 1px solid #eee; padding-left: 10px;}
+    .sec3box4{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; }
+    .sec3box41{width: 90%; height: 90%;  display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+    .sec3box412{width: 100%; height: 15%; }
+    .sec3box412 span{font-size: 4vmin;}
+    .sec3box411{width: 100%; height: 60%;  display: flex; flex-wrap: wrap;}
+    .sec3box411 span{width: 100%; text-align: center; font-size: 3vmin;}
+    .sec3box4111{width: 25%; height: 100%; border-right: 1px solid black;display: flex; flex-wrap: wrap; align-content: center; }
+    .sec3box4112{width: 25%; height: 100%; border-right: 1px solid black; display: flex; flex-wrap: wrap; align-content: center; }
+    .sec3box4113{width: 25%; height: 100%;  border-right: 1px solid black; display: flex; flex-wrap: wrap; align-content: center; }
+    .sec3box4114{width: 24%; height: 100%;  display: flex; flex-wrap: wrap; align-content: center; }
+
+    footer{width: 100vw; height: 50px; background-color: pink; position: fixed; z-index: 9999; bottom: 0; left: 0;}
+    }

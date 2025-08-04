@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM entertainment</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <script src="../js/main1js.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        
+        *{margin: 0; padding: 0; font-family: 'Fredoka One', cursive;}
+        body{background-color: pink;}
+        ul,li,ol{list-style-type: none;}
+        a{text-decoration: none;}
+        .kor{font-family: 'Black Han Sans', sans-serif;}
+
+        .header{width: 100vw; height: 100vh;}
+        .nav1{width: 100%; height: 100px; background-color: black; position: fixed; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; z-index: 9998;}
+        .logo{width: 5%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+        .logo img{width: 100px; height: 100px;}
+        .nav1inbox{width: 50%; height: 100%; }
+        .navigation{width: 100%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+        .navigation li{display: inline-block;}
+        .navigation li a{color: white; font-size: 3vmin;}
+        .lang{width: 5%; height: 100px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+        .lang li{display: block;}
+        .lang li a{color: white; font-size: 2.5vmin;}
+        .langinbox1{width: 100%;  position: relative; text-align: center;}
+        .langinbox11{width:100%; height: 170px; background-color: rgb(255, 169, 184); display: none; position: absolute; text-align: center; }
+        .langinbox11 li{margin-top: 20px;}
+        .menu-trigger{display: none;}
+
+        .nav2{width: 100%; height: 350px; background-color: rgb(255, 169, 184); position: fixed; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; z-index: 9999;}
+        .logo2{width: 5%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+        .logo2 img{width: 100px; height: 100px;}
+        .nav2inbox{width: 50%; height: 100%;}
+        .navigation2{width: 100%; height: 100%;  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+        .navigation2>li{display: inline-block; text-align: center;}
+        .navigation2>li>a{color: white; font-size: 3vmin;}
+        .menu li{display: block; margin-top: 35px; text-align: center;}
+        .menu span{position:relative ;}
+        .menu li a{color: white; font-size: 2.5vmin;}
+        .menu li span{color: white; font-size: 2.5vmin;}
+        .menu li a:hover{color:#eee; transition:all .3s ease}
+        .menu li > span{ position:relative }
+        .menu li > span::after {content: '';width: 0%; left: 50%;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+        .menu li:hover > span::after {  content: '';  width: 100%;  left: 0px;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="header">
+
+        <a class="menu-trigger" href="#">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </a>
+        
+        <nav class="nav1">
+            <div class="logo" onclick="location.href='../index.html'"><img src="img/logo2.png" alt="logo1"></div>
+            <div class="nav1inbox">
+            <ul class="navigation">
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">SPOTLIGHT</a></li>
+            </ul>
+            </div>
+            <ul class="lang">
+                <li class="langinbox1"><a href="#">KOR</a>
+                    <ul class="langinbox11">
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">CHN</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav2">
+            <div class="logo2" onclick="location.href='../index.html'"><img src="img/logo2.png" alt="logo2"></div>
+            <div class="nav2inbox">
+            <ul class="navigation2">        
+                <li><a href="#" class="nav2head1">COMPANY</a>
+                    <ul class="menu">
+                        <li><span><a class="kor nav2text1" href="#">기업소개</a></span></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="#" class="nav2head2">BUSINESS</a>
+                    <ul class="menu">
+                        <li><span><a href="#" class="nav2text2">Entertainment</a></span></li>
+                        <li><span><a href="#" class="nav2text2">Artist</a></span></li>
+                        <li><span><a href="#" class="nav2text2">New Media</a></span></li>
+                        <li><span><a href="#" class="nav2text2">Life style</a></span></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav2head3">IR</a>
+                    <ul class="menu">
+                        <li><span><a class="kor nav2text3" href="#">경영정보</a></span></li>
+                        <li><span><a class="kor nav2text3" href="#">공시정보</a></span></li>
+                        <li><span><a class="kor nav2text3" href="#">IR 자료실</a></span></li>
+                        <li><span><a class="kor nav2text3" href="#">주가정보</a></span></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav2head4">SPOTLIGHT</a>
+                    <ul class="menu">
+                        <li><span><a href="#" class="nav2text4">Spotlight</a></span></li>
+                    </ul>
+                </li>    
+            </ul>
+            </div>
+            <ul class="lang">
+                <li class="langinbox1"><a href="#">KOR</a>
+                    <ul class="langinbox11">
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">CHN</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+         var burger = $('.menu-trigger');
+
+burger.each(function (index) {
+    var $this = $(this);
+
+    $this.on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active-' + (index + 1));
+        
+    })
+});
+
+
+
+    </script>
+
+</body>
+</html>

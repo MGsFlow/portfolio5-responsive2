@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM entertainment</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <script src="../js/main1js.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        
+        *{margin: 0; padding: 0; font-family: 'Fredoka One', cursive;}
+        body{background-color: pink;}
+        ul,li,ol{list-style-type: none;}
+        a{text-decoration: none;}
+        .kor{font-family: 'Black Han Sans', sans-serif;}
+        .wrap{width: 100vw; height: 100vh; overflow-x: hidden;}
+       /* 스크롤바 없애기 *::-webkit-scrollbar {display: none;}  */
+
+       .pageon{animation: pagerise 5s; }
+       @keyframes pagerise{ from{width: 0%;} to{width: 91%;}}
+
+
+        .header{width: 100%; height: 100%;}
+        .nav1{width: 100%; height: 100px; background-color: pink;  position: fixed; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; z-index: 9998;}
+        .logo{width: 5%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+        .logo img{width: 100px; height: 100px;}
+        .nav1inbox{width: 50%; height: 100%; }
+        .navigation{width: 100%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+        .navigation li{display: inline-block;}
+        .navigation li a{color: white; font-size: 3vmin;}
+        .lang{width: 5%; height: 100px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+        .lang li{display: block;}
+        .lang li a{color: white; font-size: 2.5vmin;}
+        .langinbox1{width: 100%;  position: relative; text-align: center;}
+        .langinbox11{width:100%; height: 170px; background-color: rgb(255, 169, 184); display: none; position: absolute; text-align: center; }
+        .langinbox11 li{margin-top: 20px;}
+        .menu-trigger{display: none;}
+
+        .nav2{width: 100%; height: 350px; background-color: rgb(255, 169, 184); position: fixed; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; z-index: 9999;}
+        .logo2{width: 5%; height: 100px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+        .logo2 img{width: 100px; height: 100px;}
+        .nav2inbox{width: 50%; height: 100%;}
+        .navigation2{width: 100%; height: 100%;  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-content: center;}
+        .navigation2>li{display: inline-block; text-align: center;}
+        .navigation2>li>a{color: white; font-size: 3vmin;}
+        .menu li{display: block; margin-top: 35px; text-align: center;}
+        .menu span{position:relative ;}
+        .menu li a{color: white; font-size: 2.5vmin;}
+        .menu li span{color: white; font-size: 2.5vmin;}
+        .menu li a:hover{color:#eee; transition:all .3s ease}
+        .menu li > span{ position:relative }
+        .menu li > span::after {content: '';width: 0%; left: 50%;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+        .menu li:hover > span::after {  content: '';  width: 100%;  left: 0px;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+
+        .section1{width: 100%; height: 100%; background-color:pink; position: relative;}
+        .sec1box{width: 91%; height: 300%; position: absolute; top: 100px; right: 0px; background-color: wheat; z-index: 1; display: flex; flex-wrap: wrap; border-left: 3px solid white; border-right: 3px solid white;}
+        .sec2box{width: 91%; height: 300%; position: absolute; top: 100px; right: 50px; background-color: yellow; z-index: 2; display: flex; flex-wrap: wrap; border-left: 3px solid white; border-right: 3px solid white;}
+        .sec3box{width: 91%; height: 300%; position: absolute; top: 100px; right: 100px; background-color: violet; z-index: 3; display: flex; flex-wrap: wrap; border-left: 3px solid white; border-right: 3px solid white;}
+        .sec3box1{width: 100%; height: 20%; background-color: blanchedalmond; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+        .sec3box11{width: 90%; height: 80%; background-color: chocolate; display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid black;}
+        .sec3box11 span{font-size: 9vmin; color: pink;}
+        .sec3box2{width: 100%; height: 40%; background-color: brown; display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+        .sec3box21{width: 90%; height: 80%; background-color: powderblue; display: flex; flex-wrap: wrap;}
+        .sec3box211{width: 30%; height: 95%; background-color: blueviolet; display: flex; flex-wrap: wrap; align-content: space-between;}
+        .sec3box211 span{width: 100%; font-size: 2vmin;}
+        .sec3box211 img{width: 250px; height: 250px;}
+        .sec3box212{width: 70%; height: 100%; background-color: cornflowerblue;}
+        .sec3box2121{width: 100%; height: 50%; background-color: cornsilk; background-image: url("./img/con1.jpg"); background-repeat: no-repeat; background-size: cover;}
+        .sec3box2122{width: 100%; height: 50%; background-color: cyan; display: flex; flex-wrap: wrap; align-content: center;}
+        .sec3box21221{width: 100%; height: 80%; background-color: darkblue;}
+        .sec3box21221 span{font-size: 2.5vmin;}
+        .sec3box3{width: 100%; height: 20%; background-color: burlywood; display: flex; flex-wrap: wrap; justify-content: center;}
+        .sec3box31{width: 90%; height: 90%; background-color: darkgoldenrod; border-top: 3px solid black;}
+        .sec3box31table{width: 100%; height: 100%; border: 1px solid #eee; font-size: 2vmin;}
+        .sec3box31table th{border-bottom: 1px solid #eee; border-right: 1px solid #eee; background-color: #F5F5F5;}
+        .sec3box31table td{border-bottom: 1px solid #eee;}
+        .sec3box4{width: 100%; height: 20%; background-color: cadetblue; display: flex; flex-wrap: wrap; justify-content: center; }
+        .sec3box41{width: 90%; height: 90%; background-color: blanchedalmond; display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+        .sec3box412{width: 100%; height: 15%; background-color: blue;}
+        .sec3box412 span{font-size: 3vmin;}
+        .sec3box411{width: 100%; height: 60%; background-color: black; display: flex; flex-wrap: wrap;}
+        .sec3box411 span{width: 100%; text-align: center; font-size: 3vmin;}
+        .sec3box4111{width: 25%; height: 100%; background-color: brown; border-right: 1px solid black;display: flex; flex-wrap: wrap; align-content: center; }
+        .sec3box4112{width: 25%; height: 100%; background-color: burlywood; border-right: 1px solid black; display: flex; flex-wrap: wrap; align-content: center; }
+        .sec3box4113{width: 25%; height: 100%; background-color: chocolate; border-right: 1px solid black; display: flex; flex-wrap: wrap; align-content: center; }
+        .sec3box4114{width: 24%; height: 100%; background-color: cyan; display: flex; flex-wrap: wrap; align-content: center; }
+
+        footer{width: 100vw; height: 50px; background-color: pink; position: fixed; z-index: 9999; bottom: 0; left: 50px;}
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+
+    <header class="header">
+
+        <a class="menu-trigger" href="#">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </a>
+        
+        <nav class="nav1">
+            <div class="logo" onclick="location.href='../index.html'"><img src="img/logo2.png" alt="logo1"></div>
+            <div class="nav1inbox">
+            <ul class="navigation">
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">SPOTLIGHT</a></li>
+            </ul>
+            </div>
+            <ul class="lang">
+                <li class="langinbox1"><a href="#">KOR</a>
+                    <ul class="langinbox11">
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">CHN</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav2">
+            <div class="logo2" onclick="location.href='../index.html'"><img src="img/logo2.png" alt="logo2"></div>
+            <div class="nav2inbox">
+            <ul class="navigation2">        
+                <li><a href="#" class="nav2head1">COMPANY</a>
+                    <ul class="menu">
+                        <li><span><a class="kor nav2text1" href="#">Company info</a></span></li>
+                        <li><span><a class="kor nav2text1" href="#">Artist</a></span></li>
+                        <li><span><a class="kor nav2text1" href="#">Mission</a></span></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="#" class="nav2head2">BUSINESS</a>
+                    <ul class="menu">
+                        <li><span><a href="#" class="nav2text2">Entertainment</a></span></li>
+                        <li><span><a href="#" class="nav2text2">Concert</a></span></li>
+                        <li><span><a href="#" class="nav2text2">New Media</a></span></li>
+                        <li><span><a href="#" class="nav2text2">Life style</a></span></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav2head3">IR</a>
+                    <ul class="menu">
+                        <li><span><a class="kor nav2text3" href="#">경영정보</a></span></li>
+                        <li><span><a class="kor nav2text3" href="#">공시정보</a></span></li>
+                        <li><span><a class="kor nav2text3" href="#">IR 자료실</a></span></li>
+                        <li><span><a class="kor nav2text3" href="#">주가정보</a></span></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav2head4">SPOTLIGHT</a>
+                    <ul class="menu">
+                        <li><span><a href="#" class="nav2text4">Spotlight</a></span></li>
+                    </ul>
+                </li>    
+            </ul>
+            </div>
+            <ul class="lang">
+                <li class="langinbox1"><a href="#">KOR</a>
+                    <ul class="langinbox11">
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">CHN</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="section1">
+            <div class="sec1box">
+                
+                
+            </div>
+            <div class="sec2box">
+             
+                
+            </div>
+            <div class="sec3box">
+                <div class="sec3box1">
+                    <div class="sec3box11">
+                        <span>Asia’s No.1<br>Entertainment<br>Group</span>
+                    </div>
+                </div>
+                <div class="sec3box2">
+                    <div class="sec3box21">
+                        <div class="sec3box211">
+                            <span>WHO WE ARE</span>
+                            <img src="img/logo2.png" alt="img1">
+                        </div>
+                        <div class="sec3box212">
+                            <div class="sec3box2121"></div>
+                            <div class="sec3box2122">
+                                <div class="sec3box21221">
+                                    <span>Founded in 1995 by General Producer Sooman Lee, SM Entertainment is the first in the industry to 
+                                        introduce a systematic casting, training, producing and management system, and is discovering unique 
+                                        ntent by accurately analyzing music and cultural trend demands. In addition, we have established 
+                                        ourselves as a leading entertainment company in Asia by entering the global market with a globalization 
+                                        & localization strategy through Culture Technology.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec3box3">
+                    <div class="sec3box31">
+                        <table class="sec3box31table">
+                            <tr>
+                                <th>Cpmpany Name</th>
+                                <td>SM Entertainment Co., Ltd.</td>
+                            </tr>
+                            <tr>
+                                <th>C.E.O.</th>
+                                <td>Lee Sung Su, Tak Young Jun</td>
+                            </tr>
+                            <tr>
+                                <th>Business Field / Registered Sector</th>
+                                <td>Music/Sound Production, Talent Management, Music/Audio Content Publication</td>
+                            </tr>
+                
+                            <tr>
+                                <th>Address</th>
+                                <td>SM Entertainment 83-21, Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea</td>
+                            </tr>
+
+                            <tr>
+                                <th>Date of Establishment</th>
+                                <td>February 1995</td>
+                            </tr>
+
+                            <tr>
+                                <th>Employees</th>
+                                <td>498 (2020.12.31)</td>
+                            </tr>
+                
+                        </table>
+                    </div>
+                </div>
+                <div class="sec3box4">
+                    <div class="sec3box41">
+                        <div class="sec3box412">
+                            <span>SM Entertainment in numbers</span>
+                        </div>
+                        <div class="sec3box411">
+                            <div class="sec3box4111">
+                                <span class="count1">43,846,265,893</span>
+                                <span class="kor">유투브 누적 동영상 조회수</span>
+                            </div>
+                            <div class="sec3box4112">
+                                <span class="count2">20,000,000</span>
+                                <span class="kor">원드투어 콘서트 총 관객수</span>
+                            </div>
+                            <div class="sec3box4113">
+                                <span class="count3">172,000</span>
+                                <span class="kor">연평균 전세계</span>
+                                <span class="kor">SM 오디션 응모자수</span>
+                            </div>
+                            <div class="sec3box4114">
+                                <span class="count4">864</span>
+                                <span class="kor">글로벌 작곡가 네트워크 보유수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <footer></footer>
+    
+    
+</div>
+
+    <script>
+         var burger = $('.menu-trigger');
+
+burger.each(function (index) {
+    var $this = $(this);
+
+    $this.on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active-' + (index + 1));
+        
+    })
+});
+
+    $(".sec1box").click(function(){
+        $(this).css("z-index","3").addClass("pageon");
+        $(".sec2box").css("z-index","2").removeClass("pageon");
+        $(".sec3box").css("z-index","1").removeClass("pageon");
+        
+        
+        
+    });
+    $(".sec2box").click(function(){
+        $(this).css("z-index","3").addClass("pageon");
+        $(".sec1box").css("z-index","2").removeClass("pageon");
+        $(".sec3box").css("z-index","1").removeClass("pageon");
+        
+    });
+
+    $(".sec3box").click(function(){
+        $(this).css("z-index","3").addClass("pageon");
+        $(".sec2box").css("z-index","2").removeClass("pageon");
+        $(".sec1box").css("z-index","1").removeClass("pageon");
+       
+    });
+
+    $(function(){
+        var cnt1=0;
+  
+        counterFn();
+  
+        function counterFn(){
+          id1=setInterval(counterFn,1);
+  
+          function counterFn(){
+            cnt1++;
+            if(cnt1>43846265893){
+              clearInterval(id1);
+            }else{
+              $(".count1").text(cnt1);
+            }
+          }
+        }
+      });
+
+      $(function(){
+        var cnt1=0;
+  
+        counterFn();
+  
+        function counterFn(){
+          id1=setInterval(counterFn,1);
+  
+          function counterFn(){
+            cnt1++;
+            if(cnt1>20000000){
+              clearInterval(id1);
+            }else{
+              $(".count2").text(cnt1);
+            }
+          }
+        }
+      });
+
+      $(function(){
+        var cnt1=0;
+  
+        counterFn();
+  
+        function counterFn(){
+          id1=setInterval(counterFn,1);
+  
+          function counterFn(){
+            cnt1++;
+            if(cnt1>172000){
+              clearInterval(id1);
+            }else{
+              $(".count3").text(cnt1);
+            }
+          }
+        }
+      });
+
+      $(function(){
+        var cnt1=0;
+  
+        counterFn();
+  
+        function counterFn(){
+          id1=setInterval(counterFn,1);
+  
+          function counterFn(){
+            cnt1++;
+            if(cnt1>864){
+              clearInterval(id1);
+            }else{
+              $(".count4").text(cnt1);
+            }
+          }
+        }
+      });
+
+
+
+    </script>
+
+</body>
+</html>

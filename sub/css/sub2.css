@@ -1,0 +1,132 @@
+@charset "uft-8";
+
+@media (min-width:600px) and (max-width:1199px){
+    .header{width: 100%; height: 100%;}
+    
+   
+    .menu-trigger,.menu-trigger span {display: inline-block;transition: all .4s;}
+    .menu-trigger {position: fixed; top:5px; left: 10px; width: 30px;height: 30px; z-index: 9999;}
+    .menu-trigger span {position: absolute; width: 100%;height: 4px;background-color: black;border-radius: 4px; z-index: 70;}
+    .menu-trigger span:nth-of-type(1) {top: 0;}
+    .menu-trigger span:nth-of-type(2) {top: 13px;}
+    .menu-trigger span:nth-of-type(3) {bottom: 0;}
+    .menu-trigger.active-1 span:nth-of-type(1) {transform: translateY(13px) rotate(-45deg);}
+    .menu-trigger.active-1 span:nth-of-type(2) {opacity: 0;}
+    .menu-trigger.active-1 span:nth-of-type(3) {transform: translateY(-13px) rotate(45deg);}
+    
+    .nav1{display: none;}
+   
+
+    .nav2{width: 80%; height: 100%; background-color: rgb(255, 169, 184);  position: fixed; top: 0; right: 0; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; z-index: 9998;}
+    .logo2{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .logo2 img{width: 150px; height: 150px;}
+    .nav2inbox{width: 100%; height: 80%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .navigation2{width: 100%; height: 100%;}
+    .navigation2>li{display: block; text-align: center; width: 100%; margin-top: 40px;}
+  
+    .navigation2>li>a{color: white; font-size: 10vmin;}
+    .lang{display: none;}
+ 
+    .menu li{display: block; text-align: center; width: 100%; margin-top: 10px;}
+    .menu span{position:relative ;}
+    .menu li a{color: white; font-size: 5vmin;}
+    .menu li a:hover{color:#eee; transition:all .3s ease}
+    .menu li > span{ position:relative }
+    .menu li > span::after {content: '';width: 0%; left: 50%;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+    .menu li:hover > span::after {  content: '';  width: 100%;  left: 0px;  height: 1px;  display: block;  position: absolute;  margin-top: 3px;  border-bottom: 2px solid #eee;  transition:all .3s ease;}
+    
+    .section1{width: 100%; height: 100%; background-color:pink; position: relative;}
+    .sec1box{width: 91%; height: 300%; background-color: white; position: absolute; top: 0; right: 0px; z-index: 1; display: flex; flex-wrap: wrap; border-left: 2px solid black; border-right: 2px solid black;}
+    .sec1box1{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;  background-image: url("../img/concert2.png"); background-repeat: no-repeat; background-size: cover;}
+    .sec1box1:hover{cursor: pointer;}
+    .sec1box11{width: 90%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid white;}
+    .sec1box11 span{font-size: 9vmin; color: white;}
+    .sec1box2{width: 100%; height: 15%;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box21{width: 90%; height: 90%;  display: flex; flex-wrap: wrap;  align-content: center; border-bottom: 3px solid black;}
+    .sec1box21 span{width: 100%; color: black;}
+    .sec1box21 span:nth-of-type(1){font-size: 5vmin;}
+    .sec1box21 span:nth-of-type(2){font-size: 2vmin;}
+    .sec1box21 span:nth-of-type(3){font-size: 3vmin;}
+    .sec1box3{width: 100%; height: 15%;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box31{width: 90%; height: 90%; display: flex; flex-wrap: wrap;  align-content: center; border-bottom: 3px solid black;}
+    .sec1box31 span{width: 100%; color: black;}
+    .sec1box31 span:nth-of-type(1){font-size: 5vmin;}
+    .sec1box31 span:nth-of-type(2){font-size: 2vmin;}
+    .sec1box31 span:nth-of-type(3){font-size: 3vmin;}
+    .sec1box4{width: 100%; height: 50%;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box41{width: 90%; height: 90%; }
+    .sec1box411{width: 100%; height: 30%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec1box4111{width: 80%; height: 80%;  background-image: url("../img/mission.png"); background-repeat: no-repeat; background-size: contain;}
+    .sec1box412{width: 100%; height: 50%; }
+    .sec1box4121{width: 100%; height: 50%;  display: flex; flex-wrap: wrap; align-content: center;}
+    .sec1box4121 span{width: 100%; color: black;}
+    .sec1box4121 span:nth-of-type(1){font-size: 4vmin;}
+    .sec1box4121 span:nth-of-type(2){font-size: 3vmin;}
+    .sec1box4122{width: 100%; height: 50%;  display: flex; flex-wrap: wrap;  align-content: center;}
+    .sec1box4122 span{width: 100%; color: black;}
+    .sec1box4122 span:nth-of-type(1){font-size: 4vmin;}
+    .sec1box4122 span:nth-of-type(2){font-size: 3vmin;}
+    
+    
+    .sec2box{width: 91%; height: 300%; background-color: white; position: absolute; top: 0; right: 30px; background-color: white; z-index: 2; display: flex; flex-wrap: wrap; border-left: 2px solid black; border-right: 2px solid black;}
+    .sec2box1{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;  background-image: url("../img/concert3.jpg"); background-repeat: no-repeat; background-size: cover;}
+    .sec2box1:hover{cursor: pointer;}
+    .sec2box11{width: 90%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid black;}
+    .sec2box11 span{font-size: 9vmin; color: black;}
+    .sec2box2{width: 100%; height: 80%; }
+    .sec2box2menu{width: 100%; height: 10%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+    .sec2box2menu1{width: 80%; height: 30%;  display: flex; flex-wrap: wrap; justify-content: center;}
+    .sec2box2menu1 li{width: 23%; height: 70%; font-size: 2vmin; border: 1px solid black; margin: 0 2px 0 2px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+    .sec2box2menu1 li:hover{cursor: pointer; background-color: pink; border: pink; color: white; transition: 1s;}
+    .sec2box2img{width: 100%; height: 80%;  position: relative;}
+    .sec2box2img1{width: 90%; height: 100%; position: absolute; top: 0; left: 5%; z-index: 5; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;}
+    .sec2box2img11{width: 30%; height: 16%; overflow: hidden;}
+    .sec2box2img11 img{width: 100%; height: 100%;}
+    .sec2box2img11 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2img2{width: 90%; height: 100%;  position: absolute; top: 0; left: 5%; z-index: 4; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;}
+    .sec2box2img21{width: 30%; height: 16%; overflow: hidden;}
+    .sec2box2img21 img{width: 100%; height: 100%;}
+    .sec2box2img2 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2img3{width: 90%; height: 100%; position: absolute; top: 0; left: 5%; z-index: 3; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;}
+    .sec2box2img31{width: 30%; height: 16%; overflow: hidden;}
+    .sec2box2img31 img{width: 100%; height: 100%;}
+    .sec2box2img31 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2img4{width: 90%; height: 100%; position: absolute; top: 0; left: 5%; z-index: 2; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;} 
+    .sec2box2img41{width: 30%; height: 16%; overflow: hidden;}
+    .sec2box2img41 img{width: 100%; height: 100%;}
+    .sec2box2img41 img:hover{transform: scale(1.2); transition: 1s;}
+    .sec2box2num{width: 100%; height: 10%; }
+
+    .sec3box{width: 91%; height: 300%; position: absolute; top: 0; right: 60px; background-color: white; z-index: 3; display: flex; flex-wrap: wrap; border-left: 2px solid black; border-right: 2px solid black;}
+    .sec3box1{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; background-image: url("../img/concert1.jpg"); background-repeat: no-repeat; background-size: cover;}
+    .sec3box1:hover{cursor: pointer;}
+    .sec3box11{width: 90%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; border-bottom: 3px solid white; }
+    .sec3box11 span{font-size: 9vmin; color: white;}
+    .sec3box2{width: 100%; height: 40%; display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+    .sec3box21{width: 90%; height: 80%;  display: flex; flex-wrap: wrap;}
+    .sec3box211{width: 30%; height: 95%;display: flex; flex-wrap: wrap; align-content: space-between;}
+    .sec3box211 span{width: 100%; font-size: 4vmin;}
+    .sec3box211 img{width: 150px; height: 150px;}
+    .sec3box212{width: 70%; height: 100%; }
+    .sec3box2121{width: 100%; height: 50%; background-image: url("../img/con1.jpg"); background-repeat: no-repeat; background-size: cover;}
+    .sec3box2122{width: 100%; height: 50%; display: flex; flex-wrap: wrap; align-content: center;}
+    .sec3box21221{width: 100%; height: 80%;}
+    .sec3box21221 span{font-size: 2.5vmin;}
+    .sec3box3{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center;}
+    .sec3box31{width: 90%; height: 90%;  border-top: 3px solid black;}
+    .sec3box31table{width: 100%; height: 100%; border: 1px solid #eee; font-size: 2vmin;}
+    .sec3box31table th{border-bottom: 1px solid #eee; border-right: 1px solid #eee; background-color: #F5F5F5; font-size: 2vmin;}
+    .sec3box31table td{border-bottom: 1px solid #eee; padding-left: 10px;}
+    .sec3box4{width: 100%; height: 20%; display: flex; flex-wrap: wrap; justify-content: center; }
+    .sec3box41{width: 90%; height: 90%;  display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+    .sec3box412{width: 100%; height: 15%; }
+    .sec3box412 span{font-size: 4vmin;}
+    .sec3box411{width: 100%; height: 60%;  display: flex; flex-wrap: wrap;}
+    .sec3box411 span{width: 100%; text-align: center; font-size: 3vmin;}
+    .sec3box4111{width: 25%; height: 80%; border-right: 1px solid black;display: flex; flex-wrap: wrap; align-content: center; }
+    .sec3box4112{width: 25%; height: 80%; border-right: 1px solid black; display: flex; flex-wrap: wrap; align-content: center; }
+    .sec3box4113{width: 25%; height: 80%;  border-right: 1px solid black; display: flex; flex-wrap: wrap; align-content: center; }
+    .sec3box4114{width: 24%; height: 80%;  display: flex; flex-wrap: wrap; align-content: center; }
+
+    footer{width: 100vw; height: 50px; background-color: pink; position: fixed; z-index: 9999; bottom: 0; left: 0;}
+    }
